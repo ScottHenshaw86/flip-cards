@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: f0eff4;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+    user-select: none;
+    padding-top: 10px;
+}
+
+header {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#cards-container {
+    max-width: 90vw;
+    min-width: 70vw;
+    min-height: 60vh;
+    border-radius: 20px;
+    background-color: #fcd0a1;
+    border: 3px dashed #fff;
+    outline:8px solid #fcd0a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 212px;
+    height: 212px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 3rem;
+    background-color:#d50000;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            rgba(0,0,0,0.8),
+            rgba(0,0,0,0.8) 50px,
+            transparent 0px,
+            transparent 100px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5) 50px,
+            transparent 0px,
+            transparent 100px
+        );
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.card > h1 {
+    opacity: 0;
+}
+
+.card.flipped {
+    background-color: #f0eff4;
+    color: black;
+    background-image: none;
+}
+
+.card.flipped > * {
+    opacity: 1;
+}
+
+.card.hidden {
+    background-color: #fcd0a1;
+    color: #fcd0a1;
+    background-image: none;
+}
+

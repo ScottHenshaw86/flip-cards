@@ -1,0 +1,9 @@
+1. Create a collection of words and images
+2. Generate a card for each word and image (in random order)
+3. Make the cards clickable
+4. When the user clicks on a card, flip it over
+5. If the user clicks on a card while another is already flipped over,
+    6. Check if the cards form a pair.
+        7. If they do, hide the cards and grant 1 point
+        8. If they don't match, turn them back over and prompt the user to try again
+9. When all the cards are gone, the user wins!
